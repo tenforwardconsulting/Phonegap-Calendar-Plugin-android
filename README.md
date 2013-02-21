@@ -33,4 +33,6 @@ That's it!
 
 ## Caveats ##
 
-The only API that is implemented is createEvent.  If you have a need for the other apis, feel free to implement them and send a pull request :) 
+* The only API that is implemented is createEvent.  If you have a need for the other apis, feel free to implement them and send a pull request :) 
+
+* This uses an undocumented API (that was finally documented in Jelly Bean).  As such it may not work on pre 4.0 devices, but I've had very good luck so keep your fingers crossed.
