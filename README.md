@@ -1,0 +1,36 @@
+# Calendar Plugin for Phonegap #
+(c) 2013 Ten Forward Consulting, Inc.
+
+Authored by Brian Samson (@samsonasu) and Ryan Behnke
+
+This plugin is compatible with PhoneGap 2.0, and the api was based on the corresponding [iOS plugin](https://github.com/felixactv8/Phonegap-Calendar-Plugin-ios)
+
+## Adding the Plugin to your project ##
+
+1) To install the plugin, add calendar.js to your index.html: 
+
+`<script type="text/javascript" src="calendar.js"></script>`
+
+2) Add CalendarPlugin.java to your project in src/com/tenforwardconsulting/phonegap/plugins
+3) Map the plugin in `res/xml/config.xml`:
+
+   `<plugin name="CalendarPlugin" value="com.tenforwardconsulting.phonegap.plugins.CalendarPlugin"/>`
+
+## Usage ##
+
+Create an object to be used to call the defined plugin methods.
+
+    var startDate = new Date("2013-02-20 10:00 PM")
+    var endDate = new Date("2013-02-20 11:00 PM")
+    var title = "Hack on Phonegap";
+    var location = "The Basement";
+    var notes = "Hacking on open source projects late at night is the best!";
+    var success = function() { alert("woo hoo!"); };
+    var error = function(message) { alert("Doh!"); };
+    window.plugins.calendarPlugin.createEvent(title,location,notes,startDate,endDate, success, error);
+
+That's it!
+
+## Caveats ##
+
+The only API that is implemented is createEvent.  If you have a need for the other apis, feel free to implement them and send a pull request :) 
