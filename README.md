@@ -21,8 +21,8 @@ This plugin is compatible with PhoneGap 2.0, and the api was based on the corres
 
 Create an object to be used to call the defined plugin methods.
 
-    var startDate = new Date("2013-02-20 10:00 PM")
-    var endDate = new Date("2013-02-20 11:00 PM")
+    var startDate = new Date("August 20, 2013 10:00:00");
+    var endDate = new Date("August 20, 2013 11:00:00");
     var title = "Hack on Phonegap";
     var location = "The Basement";
     var notes = "Hacking on open source projects late at night is the best!";
